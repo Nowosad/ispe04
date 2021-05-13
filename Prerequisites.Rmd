@@ -32,7 +32,7 @@ install.packages("terra")
 
 Afterwards, run the code below (you should see the map as a result):
 
-```{r}
+```{r, message=FALSE}
 library(tmap)
 library(spData)
 library(spDataLarge)
