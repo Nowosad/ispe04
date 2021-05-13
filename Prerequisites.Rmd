@@ -1,0 +1,48 @@
+---
+title: "MAPR02"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Prerequisites
+
+### Equipment and software requirements
+
+Attendees are expected to use have a working version of R (version 4.0 or higher) and RStudio (version 1.4 or higher) installed.
+
+R and RStudio are supported by PC, Linux, and MacOS and can be downloaded for free by following these links
+http://www.r-project.org/ and https://www.rstudio.com/products/rstudio/download/#download.
+
+### R packages
+
+Run the code below in R to install all of the required R packages.
+
+```{r, eval=FALSE}
+install.packages("remotes")
+remotes::install_github("geocompr/geocompkg")
+install.packages("terra")
+```
+
+### Check if it works
+
+Afterwards, run the code below (you should see the map as a result):
+
+```{r}
+library(tmap)
+library(spData)
+library(spDataLarge)
+library(terra)
+nz_elev = rast(nz_elev)
+tm_shape(nz_elev) +
+  tm_graticules() +
+  tm_raster() +
+  tm_shape(nz) +
+  tm_borders()
+```
+
+Please see https://datacarpentry.org/geospatial-workshop/setup.html for instructions on how to install geospatial library dependencies.
