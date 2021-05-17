@@ -12,7 +12,7 @@ title: "ISPE04"
 
 Every day, a part of course materials (slides, scripts, exercises, datasets, etc.) will be shared with all of the participants.
 
-https://etherpad.wikimedia.org/p/ispe04
+[https://etherpad.wikimedia.org/p/ispe04](https://etherpad.wikimedia.org/p/ispe04)
 
 ## Distant time zones
 
